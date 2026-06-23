@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <!-- Accent gradients matching the theme -->
+    <linearGradient id="grad-primary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="50%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#06b6d4" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#0b0b14" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="line-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.2" />
+      <stop offset="50%" stop-color="#8b5cf6" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background glow -->
+  <circle cx="200" cy="200" r="180" fill="url(#glow)" />
+
+  <!-- Outer wireframe rings -->
+  <circle cx="200" cy="200" r="150" fill="none" stroke="url(#grad-primary)" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.4" />
+  <circle cx="200" cy="200" r="130" fill="none" stroke="#06b6d4" stroke-width="1" stroke-dasharray="3 3" opacity="0.6" />
+  
+  <!-- Tech grid elements -->
+  <g opacity="0.25">
+    <line x1="200" y1="50" x2="200" y2="350" stroke="url(#line-grad)" stroke-width="1" />
+    <line x1="50" y1="200" x2="350" y2="200" stroke="url(#line-grad)" stroke-width="1" />
+    <circle cx="200" cy="80" r="3" fill="#06b6d4" />
+    <circle cx="200" cy="320" r="3" fill="#8b5cf6" />
+    <circle cx="80" cy="200" r="3" fill="#3b82f6" />
+    <circle cx="320" cy="200" r="3" fill="#06b6d4" />
+  </g>
+
+  <!-- Coding elements / Nodes -->
+  <g fill="none" stroke="url(#grad-primary)" stroke-width="1.5">
+    <!-- Bracket tags -->
+    <path d="M 110,130 L 90,150 L 110,170" opacity="0.7"/>
+    <path d="M 290,130 L 310,150 L 290,170" opacity="0.7"/>
+  </g>
+
+  <g fill="#06b6d4" font-family="monospace" font-size="12" opacity="0.4">
+    <text x="70" y="100">&lt;code&gt;</text>
+    <text x="270" y="290">db.connect()</text>
+    <text x="280" y="90">011010</text>
+    <text x="65" y="270">python</text>
+  </g>
+
+  <!-- Futuristic User Avatar Profile Silhouette -->
+  <g>
+    <!-- Halo ring around head -->
+    <ellipse cx="200" cy="120" rx="35" ry="12" fill="none" stroke="url(#grad-primary)" stroke-width="2" opacity="0.8" />
+    
+    <!-- Head -->
+    <circle cx="200" cy="140" r="32" fill="#0f0f1b" stroke="url(#grad-primary)" stroke-width="3" />
+    <!-- Secondary inner head details -->
+    <path d="M 185,140 Q 200,125 215,140" fill="none" stroke="#06b6d4" stroke-width="2" opacity="0.6"/>
+
+    <!-- Neck -->
+    <path d="M 190,170 L 190,195 L 210,195 L 210,170 Z" fill="#0f0f1b" stroke="url(#grad-primary)" stroke-width="1" />
+
+    <!-- Shoulders / Torso -->
+    <path d="M 130,280 C 130,220 160,200 200,200 C 240,200 270,220 270,280" fill="#0f0f1b" stroke="url(#grad-primary)" stroke-width="3" />
+    
+    <!-- Holographic Chest core -->
+    <circle cx="200" cy="245" r="16" fill="none" stroke="#06b6d4" stroke-width="2" />
+    <circle cx="200" cy="245" r="8" fill="url(#grad-primary)" />
+    <line x1="200" y1="200" x2="200" y2="229" stroke="#06b6d4" stroke-width="1.5" stroke-dasharray="2 2" />
+  </g>
+</svg>

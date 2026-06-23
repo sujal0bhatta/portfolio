@@ -1,0 +1,78 @@
+/* theme.css - Theme system variables for Sujal Bhatta's Portfolio */
+
+:root {
+  /* Common Variables */
+  --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  
+  --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  
+  --gradient-accent: linear-gradient(135deg, hsl(263, 90%, 60%) 0%, hsl(221, 83%, 53%) 50%, hsl(188, 86%, 50%) 100%);
+  --gradient-text: linear-gradient(135deg, hsl(0, 0%, 100%) 30%, hsl(240, 5%, 70%) 100%);
+  --gradient-text-light: linear-gradient(135deg, hsl(240, 10%, 10%) 30%, hsl(240, 5%, 40%) 100%);
+  
+  --border-radius-sm: 8px;
+  --border-radius-md: 16px;
+  --border-radius-lg: 24px;
+  --border-radius-full: 9999px;
+  
+  /* DARK THEME (Default) */
+  --bg-color: hsl(240, 18%, 6%);
+  --bg-dots: radial-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  --text-primary: hsl(0, 0%, 98%);
+  --text-secondary: hsl(240, 5%, 68%);
+  --text-muted: hsl(240, 4%, 48%);
+  
+  --accent-primary: hsl(263, 90%, 65%);   /* Violet */
+  --accent-secondary: hsl(188, 86%, 53%); /* Cyan */
+  --accent-tertiary: hsl(221, 83%, 53%);  /* Blue */
+  
+  --accent-glow: rgba(139, 92, 246, 0.15);
+  --cyan-glow: rgba(6, 182, 212, 0.15);
+  
+  /* Glassmorphism Dark */
+  --card-bg: rgba(15, 15, 25, 0.5);
+  --card-border: rgba(255, 255, 255, 0.05);
+  --card-hover-border: rgba(6, 182, 212, 0.3);
+  --card-shadow: rgba(0, 0, 0, 0.4);
+  
+  --nav-bg: rgba(10, 10, 18, 0.7);
+  --nav-border: rgba(255, 255, 255, 0.05);
+  
+  --scroll-track: hsl(240, 15%, 8%);
+  --scroll-thumb: hsl(240, 10%, 20%);
+  --scroll-thumb-hover: hsl(263, 90%, 65%);
+}
+
+/* LIGHT THEME Override */
+body.light-theme {
+  --bg-color: hsl(240, 20%, 98%);
+  --bg-dots: radial-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px);
+  --text-primary: hsl(240, 10%, 12%);
+  --text-secondary: hsl(240, 6%, 35%);
+  --text-muted: hsl(240, 4%, 55%);
+  
+  --accent-primary: hsl(263, 85%, 55%);   /* Violet */
+  --accent-secondary: hsl(188, 85%, 45%); /* Cyan */
+  --accent-tertiary: hsl(221, 80%, 48%);  /* Blue */
+  
+  --accent-glow: rgba(139, 92, 246, 0.06);
+  --cyan-glow: rgba(6, 182, 212, 0.06);
+  
+  /* Glassmorphism Light */
+  --card-bg: rgba(255, 255, 255, 0.65);
+  --card-border: rgba(0, 0, 0, 0.06);
+  --card-hover-border: rgba(139, 92, 246, 0.35);
+  --card-shadow: rgba(31, 38, 135, 0.04);
+  
+  --nav-bg: rgba(248, 250, 252, 0.75);
+  --nav-border: rgba(0, 0, 0, 0.05);
+  
+  --scroll-track: hsl(240, 20%, 95%);
+  --scroll-thumb: hsl(240, 10%, 80%);
+  --scroll-thumb-hover: hsl(263, 85%, 55%);
+  
+  --gradient-text: linear-gradient(135deg, hsl(240, 10%, 12%) 30%, hsl(240, 6%, 35%) 100%);
+}

@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Metadata -->
+  <title>Sujal Bhatta | Student Developer & Problem Solver | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Sujal Bhatta, a student developer passionate about software engineering, web development, and problem-solving. View projects and skills.">
+  <meta name="keywords" content="Sujal Bhatta, Portfolio, Student Developer, Web Development, Python, C++, Software Engineering, Nepal">
+  <meta name="author" content="Sujal Bhatta">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sujal Bhatta | Student Developer Portfolio">
+  <meta property="og:description" content="Explore Sujal Bhatta's coding projects, technical skills, and development journey.">
+  <meta property="og:image" content="profile-placeholder.svg">
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="components.css">
+</head>
+<body>
+
+  <!-- Scroll Progress Indicator -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- Desktop Custom Cursor -->
+  <div id="custom-cursor" aria-hidden="true"></div>
+  <div id="custom-cursor-ring" aria-hidden="true"></div>
+
+  <!-- Preloader Screen -->
+  <div id="preloader" role="status" aria-label="Loading portfolio">
+    <div class="loader-content">
+      <div class="loader-logo" id="preloader-logo">SUJAL.DEV</div>
+      <div class="loader-bar" aria-hidden="true"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       HEADER / NAVBAR
+       ========================================== -->
+  <header class="header" role="banner">
+    <div class="nav-container">
+      <a href="#hero" class="logo" id="nav-logo" aria-label="Sujal Bhatta Logo">
+        <span>SUJAL</span><span class="logo-dot"></span>
+      </a>
+      
+      <nav role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#hero" class="active" id="link-hero">Home</a></li>
+          <li><a href="#about" id="link-about">About</a></li>
+          <li><a href="#skills" id="link-skills">Skills</a></li>
+          <li><a href="#experience" id="link-experience">Journey</a></li>
+          <li><a href="#testimonials" id="link-testimonials">Reviews</a></li>
+          <li><a href="#contact" id="link-contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Theme Toggle Button -->
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Change Theme">
+          <svg class="moon-icon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          <svg class="sun-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+        
+        <!-- Mobile Drawer Toggle -->
+        <button id="mobile-nav-toggle" class="mobile-nav-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section id="hero" aria-label="Introduction">
+      <div class="particles-container" aria-hidden="true">
+        <canvas id="hero-particles"></canvas>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-content" data-aos="fade-right">
+          <div class="hero-badge" role="status">
+            <span class="hero-badge-dot"></span>
+            Available for Opportunities
+          </div>
+          <h1>Hi, I'm <span class="gradient-text">Sujal Bhatta</span></h1>
+          <div class="hero-subheadline">
+            <span>Passionate Developer</span>
+            <span class="gradient-text">•</span>
+            <span>Problem Solver</span>
+            <span class="gradient-text">•</span>
+            <span>Lifelong Learner</span>
+          </div>
+          <p class="hero-desc">
+            A technology enthusiast who loves building projects, solving problems, and constantly learning new technologies. Currently exploring software development, web technologies, and programming.
+          </p>
+          <div class="hero-ctas">
+            <a href="#about" class="btn btn-primary" id="cta-about-me">About Me <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-secondary" id="cta-contact-me">Contact Me</a>
+          </div>
+        </div>
+        
+        <div class="hero-image-wrapper" data-aos="zoom-in" data-aos-delay="200">
+          <div class="hero-image-glow"></div>
+          <div class="hero-image-container">
+            <!-- Default SVG profile. User can replace this with their actual photo path (e.g. img src="assets/sujal.png") -->
+            <img src="profile-placeholder.svg" alt="Sujal Bhatta profile photo" id="profile-img">
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll down to About section">
+        <span>Scroll Down</span>
+        <div class="scroll-indicator-mouse">
+          <div class="scroll-indicator-wheel"></div>
+        </div>
+      </a>
+    </section>
+
+    <!-- ==========================================
+         ABOUT SECTION & STATS
+         ========================================== -->
+    <section id="about" aria-label="About Me">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>About Me</h2>
+        </div>
+        
+        <div class="about-grid">
+          <div class="about-info-block" data-aos="fade-right">
+            <p class="about-text">
+              I am a passionate developer with a strong interest in software engineering, web development, and problem-solving. I enjoy turning ideas into real-world projects and continuously improving my skills through learning and experimentation. My goal is to create impactful digital experiences while expanding my expertise across modern technologies.
+            </p>
+            <p class="about-text">
+              Based in Nepal, I actively collaborate on open-source repositories and explore design systems, cloud architectures, and algorithmic optimizations to write highly readable and scalable code.
+            </p>
+          </div>
+          
+          <div class="stats-grid" data-aos="fade-left">
+            <div class="glass-card stat-card">
+              <div class="stat-number" data-target="15" id="stat-projects">0+</div>
+              <div class="stat-label">Projects Completed</div>
+            </div>
+            <div class="glass-card stat-card">
+              <div class="stat-number" data-target="12" id="stat-technologies">0+</div>
+              <div class="stat-label">Technologies Learned</div>
+            </div>
+            <div class="glass-card stat-card">
+              <div class="stat-number" data-target="1200" id="stat-hours">0+</div>
+              <div class="stat-label">Coding Hours</div>
+            </div>
+            <div class="glass-card stat-card">
+              <div class="stat-number" data-target="500" id="stat-commits">0+</div>
+              <div class="stat-label">GitHub Commits</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SKILLS SECTION
+         ========================================== -->
+    <section id="skills" aria-label="My Skills">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>My Skillset</h2>
+        </div>
+        
+        <div class="skills-grid">
+          <!-- Programming Category -->
+          <div class="gradient-border-card" data-aos="fade-up">
+            <div class="skills-category-content">
+              <h3><i class="fa-solid fa-code"></i> Programming</h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">C++</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">JavaScript</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">C</span>
+                    <span class="skill-percent">70%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Web Development Category -->
+          <div class="gradient-border-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="skills-category-content">
+              <h3><i class="fa-solid fa-laptop-code"></i> Web Development</h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">HTML & CSS</span>
+                    <span class="skill-percent">90%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">React</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Tailwind CSS</span>
+                    <span class="skill-percent">80%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Node.js</span>
+                    <span class="skill-percent">65%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools Category -->
+          <div class="gradient-border-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="skills-category-content">
+              <h3><i class="fa-solid fa-toolbox"></i> Tools & workflow</h3>
+              <div class="skills-list">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Git & GitHub</span>
+                    <span class="skill-percent">85%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="85%" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">VS Code</span>
+                    <span class="skill-percent">95%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="95%" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Command Line</span>
+                    <span class="skill-percent">75%</span>
+                  </div>
+                  <div class="skill-bar-bg">
+                    <div class="skill-bar-fill" data-width="75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         JOURNEY TIMELINE SECTION
+         ========================================== -->
+    <section id="experience" aria-label="Learning Journey Timeline">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>My Journey</h2>
+        </div>
+        
+        <div class="timeline-container">
+          <div class="timeline-line">
+            <div class="timeline-line-progress" id="experience-timeline-progress"></div>
+          </div>
+
+          <!-- Milestone 1 -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-card-content">
+                <span class="timeline-date">Stage 1</span>
+                <h3>Started Programming</h3>
+                <p>Took my first step into computer science. Hooked by writing basic logic scripts to automate manual calculations, triggering a deep curiosity for computing architectures.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 2 -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-card-content">
+                <span class="timeline-date">Stage 2</span>
+                <h3>Learned C and C++</h3>
+                <p>Mastered low-level fundamentals, manual memory management, and pointers. Developed console utilities, CLI-based board games, and understood structural and object-oriented layouts.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 3 -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-card-content">
+                <span class="timeline-date">Stage 3</span>
+                <h3>Explored Python</h3>
+                <p>Dived into automation script writing, web parsing, scripting, and basic data processing models. Expanded system capabilities and created highly readable code solutions.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 4 -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-card-content">
+                <span class="timeline-date">Stage 4</span>
+                <h3>Entered Web Development</h3>
+                <p>Adopted modern web interfaces. Learned HTML5, semantic grids, vanilla CSS3 styling, and JavaScript logic to transform console utilities into responsive visual platforms.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Milestone 5 -->
+          <div class="timeline-item" data-aos="fade-up">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="glass-card timeline-card">
+              <div class="timeline-card-content">
+                <span class="timeline-date">Current</span>
+                <h3>Building Modern Projects</h3>
+                <p>Currently researching React, modern framework state management, and backend interfaces while constructing fully functional applications to solve actual user challenges.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- ==========================================
+         TESTIMONIALS SECTION
+         ========================================== -->
+    <section id="testimonials" aria-label="Testimonials & Peer Reviews">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Testimonials</h2>
+        </div>
+        
+        <div class="testimonials-grid">
+          <!-- Testimonial 1 -->
+          <div class="gradient-border-card" data-aos="fade-up">
+            <div class="skills-category-content testimonial-card">
+              <div>
+                <div class="testimonial-quote-icon" aria-hidden="true"><i class="fa-solid fa-quote-left"></i></div>
+                <p class="testimonial-text">
+                  "Sujal is an exceptionally quick learner who consistently writes clean, structured code. His dedication to solving coding tasks and understanding foundational concepts makes him a valuable asset to any project."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" aria-hidden="true">JD</div>
+                <div class="testimonial-meta">
+                  <h4>John Doe</h4>
+                  <p>Senior Developer / Project Mentor</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="gradient-border-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="skills-category-content testimonial-card">
+              <div>
+                <div class="testimonial-quote-icon" aria-hidden="true"><i class="fa-solid fa-quote-left"></i></div>
+                <p class="testimonial-text">
+                  "Working alongside Sujal during hackathons has been amazing. He is focused, highly analytical, and possesses an impressive capability to debug complex structural bugs in low-level code like C++."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" aria-hidden="true">SS</div>
+                <div class="testimonial-meta">
+                  <h4>Sarah Smith</h4>
+                  <p>Co-Founder, TechCamp Hackathon</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="gradient-border-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="skills-category-content testimonial-card">
+              <div>
+                <div class="testimonial-quote-icon" aria-hidden="true"><i class="fa-solid fa-quote-left"></i></div>
+                <p class="testimonial-text">
+                  "Sujal built a custom automated layout scraper tool that saved our data analysis team hours of manual input. He communicates clearly and delivers reliable, responsive web components."
+                </p>
+              </div>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar" aria-hidden="true">AM</div>
+                <div class="testimonial-meta">
+                  <h4>Alex Miller</h4>
+                  <p>Lead Product Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+         ========================================== -->
+    <section id="contact" aria-label="Contact Information and Links">
+      <div class="container">
+        <div class="section-title" data-aos="fade-up">
+          <h2>Get In Touch</h2>
+        </div>
+        
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-right">
+            <h3>Let's collaborate on your next big idea!</h3>
+            <p>If you have any questions, want to talk about a potential project collaboration, or just want to connect, feel free to reach out using the details below or via social media.</p>
+            
+            <div class="contact-methods">
+              <div class="contact-method-item">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div class="contact-method-details">
+                  <h4>Email</h4>
+                  <p><a href="mailto:suzalbhatta@gmail.com" class="clickable" id="contact-email-link">suzalbhatta@gmail.com</a></p>
+                </div>
+              </div>
+              
+              <div class="contact-method-item">
+                <div class="contact-method-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="contact-method-details">
+                  <h4>Location</h4>
+                  <p>Nepal</p>
+                </div>
+              </div>
+            </div>
+
+            <h4 class="socials-title">Follow Me on Socials</h4>
+            <div class="social-links">
+              <a href="https://www.facebook.com/share/1bF1sNqt6Y/" class="social-link-item" aria-label="Follow Sujal Bhatta on Facebook" title="Facebook" id="social-facebook" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/sujaal.exe?igsh=MTNhcWswYXB1dXg2eA==" class="social-link-item" aria-label="Follow Sujal Bhatta on Instagram" title="Instagram" id="social-instagram" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          
+          <div class="contact-form-container" data-aos="fade-left">
+            <div class="glass-card">
+              <form class="contact-form" action="#" method="POST" id="contact-message-form">
+                <div class="form-group">
+                  <label for="contact-name">Name</label>
+                  <input type="text" id="contact-name" class="form-input" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-email">Email</label>
+                  <input type="email" id="contact-email" class="form-input" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-subject">Subject</label>
+                  <input type="text" id="contact-subject" class="form-input" placeholder="Subject Title" required>
+                </div>
+                <div class="form-group">
+                  <label for="contact-message">Message</label>
+                  <textarea id="contact-message" class="form-input" rows="5" placeholder="Your Message Here..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" id="contact-submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <a href="#hero" class="footer-logo" id="footer-logo-link">SUJAL.DEV</a>
+      <p class="footer-text">
+        &copy; <span id="current-year">2026</span> | Designed &amp; Developed by <span class="footer-highlight">Sujal Bhatta</span>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="particles.js"></script>
+  <script src="cursor.js"></script>
+  <script src="main.js"></script>
+  <script>
+    // Update year dynamically
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
